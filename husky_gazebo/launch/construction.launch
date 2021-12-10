@@ -382,7 +382,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     respawn="false" output="screen" />
 </group>
 
-
+<!--
 <group ns="robot32">
 <node
     name="building_01"
@@ -391,6 +391,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     args="-file $(find building)/urdf/building.urdf -urdf -model building_01 -x 31.5 -y 9.5 -z 0.1 -Y 0 -R 0 -P 0"
     respawn="false" output="screen" /> 
 </group> 
+-->
 
 <!--
 <group ns="robot33">
@@ -576,6 +577,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 </group>
 -->
 
+<!--
 <group ns="robot51">
 <node
     name="incline_plane"
@@ -584,6 +586,6 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     args="-file $(find incline_plane)/urdf/incline_plane.urdf -urdf -model incline_plane -x 6.5 -y 5.5 -z 0.1 -Y 0 -R 0 -P 0"
     respawn="false" output="screen" />
 </group>
-
+-->
 
 </launch>

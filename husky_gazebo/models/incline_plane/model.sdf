@@ -7,8 +7,8 @@
       <visual name='link'>
         <geometry>
 <mesh>
-<uri>model://stair/meshes/stair.dae </uri>
-<scale>1 1 1</scale>
+<uri>model://incline_plane/meshes/incline_plane.dae </uri>
+<scale>8 15 20</scale>
 
 </mesh>
 
@@ -25,8 +25,8 @@
         <geometry>
 
 <mesh>
-<uri>model://stair/meshes/stair.dae </uri>
-<scale>1 1 1</scale>
+<uri>model://incline_plane/meshes/incline_plane.dae </uri>
+<scale>8 15 20</scale>
 </mesh>
 
         </geometry>

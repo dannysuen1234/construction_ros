@@ -7,7 +7,7 @@
       <visual name='link'>
         <geometry>
 <mesh>
-<uri>model://u005/meshes/base_link.STL </uri>
+<uri>model://u005/meshes/u005.dae </uri>
 <scale>1 1 1</scale>
 
 </mesh>
@@ -38,7 +38,7 @@
         <geometry>
 
 <mesh>
-<uri>model://u005/meshes/base_link.STL </uri>
+<uri>model://u005/meshes/u005.dae </uri>
 <scale>1 1 1</scale>
 </mesh>
 

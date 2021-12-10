@@ -1,13 +1,13 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
-  <model name='work_brench'>
+  <model name='building'>
 <link name='link'>
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
       <visual name='link'>
         <geometry>
 <mesh>
-<uri>model://stair/meshes/stair.dae </uri>
+<uri>model://building/meshes/building.dae </uri>
 <scale>1 1 1</scale>
 
 </mesh>
@@ -25,7 +25,7 @@
         <geometry>
 
 <mesh>
-<uri>model://stair/meshes/stair.dae </uri>
+<uri>model://building/meshes/building.dae </uri>
 <scale>1 1 1</scale>
 </mesh>
 

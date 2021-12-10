@@ -17,10 +17,10 @@ move_base_package = 'husky_gazebo '
 move_base_launch = 'construction_move_base.launch'
 rviz_package = 'husky_viz ' 
 rviz_launch = 'nav.launch'
-map_path_pmg = "/home/vtl/catkin_ws/src/husky/husky_navigation/maps/construction_map_before_edit.pgm"
-map_path_yaml = '/home/vtl/catkin_ws/src/husky/husky_navigation/maps/construction_map_before_edit.yaml'
-good_map_path_yaml = '/home/vtl/catkin_ws/src/husky/husky_navigation/maps/construction_map_after_edit.yaml'
-save_map_path = '/home/vtl/catkin_ws/src/husky/husky_navigation/maps/construction_map_before_edit'
+map_path_pmg = "/home/ros-dev/catkin_ws/src/husky/construction_ros/husky_navigation/maps/construction_map_before_edit.pgm"
+map_path_yaml = '/home/ros-dev/catkin_ws/src/husky/construction_ros/husky_navigation/maps/construction_map_before_edit.yaml'
+good_map_path_yaml = '/home/ros-dev/catkin_ws/src/husky/construction_ros/husky_navigation/maps/construction_map_after_edit.yaml'
+save_map_path = '/home/ros-dev/catkin_ws/src/husky/construction_ros/husky_navigation/maps/construction_map_before_edit'
 
 def listener():
 
@@ -224,16 +224,19 @@ def good_map_btn(event):
 	cmd = 'rosrun map_server map_server ' + good_map_path_yaml
 	gd_map = threading.Thread(target = linux_command, args = cmd)
 	gd_map.start()
+	print(cmd)
 
 def bad_map_btn(event):
 	cmd = 'rosrun map_server map_server ' + map_path_yaml
 	bad_map = threading.Thread(target = linux_command, args = cmd)
 	bad_map.start()
+	print(cmd)
 
 def pre_map_btn(event):
-	cmd = 'rosrun map_server map_server /home/vtl/catkin_ws/src/husky/husky_navigation/maps/construction_predefined_map.yaml'
+	cmd = 'rosrun map_server map_server /home/ros-dev/catkin_ws/src/husky/construction_ros/husky_navigation/maps/construction_predefined_map.yaml'
 	pre_map = threading.Thread(target = linux_command, args = cmd)
 	pre_map.start()
+	print(cmd)
 
 def rviz(event):
 	cmd = 'roslaunch ' + rviz_package + rviz_launch
